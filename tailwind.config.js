@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'selector',
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     borderRadius: {
@@ -8,6 +9,7 @@ export default {
     },
     boxShadow: {
       'navbar': '0px 0px 100px 0px #FFFBFB inset',
+      'navbar-black': '0px 0px 50px 0px #888888 inset',
     },
     extend: {
       colors: {

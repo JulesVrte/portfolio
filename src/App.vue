@@ -4,7 +4,7 @@ import Navbar from '~/components/Navbar.vue';
 </script>
 
 <template>
-  <div class="flex items-center flex-col min-h-screen font-Raleway">
+  <div class="flex items-center flex-col min-h-screen font-Raleway bg-white dark:bg-black">
     <Navbar />
     <RouterView />
   </div>
