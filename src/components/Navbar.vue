@@ -7,7 +7,7 @@ const isDark = useDark()
 <template >
     <nav class="flex justify-between gap-24 backdrop-blur-md bg-black text-white w-5/6 mt-12 p-6 rounded-navbar shadow-navbar dark:bg-[#efefef] dark:text-black dark:shadow-navbar-black">
         <h1 class="font-K2D text-xl font-extrabold">Jules Vérité</h1>
-        <ul class="flex flex-row gap-10 font-K2D text-l uppercase">
+        <ul class="flex flex-row gap-10 font-K2D text-l uppercase items-center">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
