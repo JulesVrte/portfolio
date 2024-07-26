@@ -11,7 +11,7 @@ import ExpressIcon from './icons/express-icon.vue';
 </script>
 
 <template >
-    <div class="w-full h-[125px] overflow-hidden group" style="">
+    <div class="w-full h-[125px] overflow-hidden group">
         <div class="flex w-full min-w-[calc(300px*8)] relative">
             <div class="item" style="--position: 1;--color: #f6c9b2">
                 <htmlIcon />

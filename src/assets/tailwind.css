@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+    .li-navbar {
+        @apply hover:underline cursor-pointer underline-offset-8 decoration-primary decoration-4
+    }
     .li-about {
         @apply flex flex-col gap-2 items-center
     }

@@ -1,0 +1,12 @@
+{
+    "locale": {
+        "fr": "Français",
+        "en": "Anglais"
+    },
+    "nav": {
+        "about": "À propos",
+        "projects": "Projets",
+        "contact": "Contact",
+        "dark_mode": "Mode sombre"
+    }
+}

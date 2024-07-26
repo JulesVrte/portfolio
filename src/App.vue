@@ -1,5 +1,4 @@
 <script setup>
-import { RouterView } from 'vue-router';
 import Navbar from '~/components/navbar.vue';
 import HeroSection from './components/hero-section.vue';
 import AboutSection from '~/components/about-section.vue';
@@ -14,7 +13,6 @@ import ProjectsSection from '~/components/projects-section.vue';
     <AboutSection />
     <ProjectsSection />
     <ContactSection />
-    <RouterView />
   </div>
 </template>
 

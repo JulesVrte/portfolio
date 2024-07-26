@@ -6,6 +6,7 @@ export default {
     borderRadius: {
       'none': '0',
       'navbar': '50px',
+      'button': '100px'
     },
     boxShadow: {
       'navbar': '0px 0px 100px 0px #FFFBFB inset, rgba(0, 0, 0, 0.24) 0px 3px 8px;',
