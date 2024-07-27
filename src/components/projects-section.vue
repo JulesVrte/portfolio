@@ -1,163 +1,100 @@
 <script setup>
-
+    import { ref, onMounted } from 'vue';
     import Separator from './separator.vue';
+
+    const carousel = ref(null);
+    const listProject = ref(null);
+    const itemProject = ref([]);
+
+    const projects = [
+        {
+            title: 'Projet 1',
+            topic: 'topic 1',
+            description: 'Description du projet 1',
+            techs: 'tech 1 details',
+            img: 'src/assets/images/projects/1.png',
+            preview: 'src/assets/images/projects/1_preview.png'
+        },
+        {
+            title: 'Projet 2',
+            topic: 'topic 2',
+            description: 'Description du projet 2',
+            techs: 'tech 2 details',
+            img: 'src/assets/images/projects/2.png',
+            preview: 'src/assets/images/projects/2_preview.png'
+        },
+        {
+            title: 'Projet 3',
+            topic: 'topic 3',
+            description: 'Description du projet 3',
+            techs: 'tech 3 details',
+            img: 'src/assets/images/projects/3.png',
+            preview: 'src/assets/images/projects/3_preview.png'
+        },
+        {
+            title: 'Projet 4',
+            topic: 'topic 4',
+            description: 'Description du projet 4',
+            techs: 'tech 4 details',
+            img: 'src/assets/images/projects/4.png',
+            preview: 'src/assets/images/projects/4_preview.png'
+        },
+        {
+            title: 'Projet 5',
+            topic: 'topic 5',
+            description: 'Description du projet 5',
+            techs: 'tech 5 details',
+            img: 'src/assets/images/projects/5.png',
+            preview: 'src/assets/images/projects/5_preview.png'
+        }
+    ]
+
+    const showSlider = (type) => {
+        if (type === 'next') {
+            itemProject.value.push(itemProject.value.shift());
+      }
+    }
 </script>
 
 <template>
     <div class="section">
         <Separator title="projects" />
-        <div class="carousel ">
-            <div class="list-project">
-                <div class="item-project">
-                    <img src="../assets/images/projects/1.png" alt="img 1" />
+        <div class="carousel" ref="carousel">
+            <div class="list-project" ref="listProject">
+                <div class="item-project" v-for="project in projects" :key="project.title" ref="itemProject">
+                    <img :src="project.img" alt="img 1" />
                     <div class="intro">
                         <div class="title">
-                            Projet 1
+                            {{ project.title }}
                         </div>
                         <div class="topic">
-                            topic 1
+                            {{ project.topic }}
                         </div>
                         <div class="description">
-                            Description du projet 1
+                            {{ project.description }}
                         </div>
-                        <button class="see-more">see more</button>
+                        <button class="see-more">See more &#8599</button>
                     </div>
                     <div class="details">
                         <div class="title">
-                            Projet 1
+                            {{ project.title }}
                         </div>
                         <div class="description">
-                            Description du projet 1
+                            {{ project.description }}
                         </div>
                         <div class="techs">
-                            tech 1 details
+                            {{ project.techs }}
                         </div>
                         <div class="preview">
-                            <img src="../assets/images/projects/1.png" alt="preview 1" />
-                        </div>
-                    </div>
-                </div>
-                <div class="item-project">
-                    <img src="../assets/images/projects/2.png" alt="img 2" />
-                    <div class="intro">
-                        <div class="title">
-                            Projet 2
-                        </div>
-                        <div class="topic">
-                           topic 2 
-                        </div>
-                        <div class="description">
-                            Description du projet 2
-                        </div>
-                        <button class="see-more">see more</button>
-                    </div>
-                    <div class="details">
-                        <div class="title">
-                            Projet 2
-                        </div>
-                        <div class="description">
-                            Description du projet 2
-                        </div>
-                        <div class="techs">
-                            tech 2 details
-                        </div>
-                        <div class="preview">
-                            <img src="../assets/images/projects/2.png" alt="preview 2" />
-                        </div>
-                    </div>
-                </div>
-                <div class="item-project">
-                    <img src="../assets/images/projects/3.png" alt="img 3" />
-                    <div class="intro">
-                        <div class="title">
-                            Projet 3
-                        </div>
-                        <div class="topic">
-                           topic 3
-                        </div>
-                        <div class="description">
-                            Description du projet 3
-                        </div>
-                        <button class="see-more">see more</button>
-                    </div>
-                    <div class="details">
-                        <div class="title">
-                            Projet 3
-                        </div>
-                        <div class="description">
-                            Description du projet 3
-                        </div>
-                        <div class="techs">
-                            tech 3 details
-                        </div>
-                        <div class="preview">
-                            <img src="../assets/images/projects/3.png" alt="preview 3" />
-                        </div>
-                    </div>
-                </div>
-                <div class="item-project">
-                    <img src="../assets/images/projects/4.png" alt="img 4" />
-                    <div class="intro">
-                        <div class="title">
-                            Projet 4
-                        </div>
-                        <div class="topic">
-                            topic 4 
-                        </div>
-                        <div class="description">
-                            Description du projet 4
-                        </div>
-                        <button class="see-more">see more</button>
-                    </div>
-                    <div class="details">
-                        <div class="title">
-                            Projet 4
-                        </div>
-                        <div class="description">
-                            Description du projet 4
-                        </div>
-                        <div class="techs">
-                            tech 4 details
-                        </div>
-                        <div class="preview">
-                            <img src="../assets/images/projects/4.png" alt="preview 4" />
-                        </div>
-                    </div>
-                </div>
-                <div class="item-project">
-                    <img src="../assets/images/projects/5.png" alt="img 5" />
-                    <div class="intro">
-                        <div class="title">
-                            Projet 5
-                        </div>
-                        <div class="topic">
-                            topic 5
-                        </div>
-                        <div class="description">
-                            Description du projet 5
-                        </div>
-                        <button class="see-more">see more</button>
-                    </div>
-                    <div class="details">
-                        <div class="title">
-                            Projet 5
-                        </div>
-                        <div class="description">
-                            Description du projet 5
-                        </div>
-                        <div class="techs">
-                            tech 5 details
-                        </div>
-                        <div class="preview">
-                            <img src="../assets/images/projects/5.png" alt="preview 5" />
+                            <img :src="project.preview" :alt="`preview-${project.title}`" />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="arrows">
-                <button id="prev"><</button>
+                <button id="prev" @click="showSlider('prev')"><</button>
                 <button id="back">Go back &#8599</button>
-                <button id="next">></button>
+                <button id="next" @click="showSlider('next')">></button>
             </div>
         </div>
     </div>

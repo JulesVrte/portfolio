@@ -6,7 +6,7 @@
 <template >
     <div class="section">
         <Separator id="about" title="about" />
-        <p class="w-2/6 leading-10">{{ $t('about.description') }}</p>
+        <p class="w-3/6 leading-10">{{ $t('about.description') }}</p>
         <ul class="flex flex-row gap-32 text-5xl font-bold">
             <li class="li-about">
                 <h4>Front-end</h4>
