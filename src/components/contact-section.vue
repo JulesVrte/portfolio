@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="w-full flex justify-center">
+    <div class="section">
         <Separator title="contact" />
     </div>
 </template>

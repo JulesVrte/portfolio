@@ -4,7 +4,7 @@
 </script>
 
 <template >
-    <div class="w-full flex items-center flex-col gap-16 dark:text-white">
+    <div class="section">
         <Separator id="about" title="about" />
         <p class="w-2/6 leading-10">{{ $t('about.description') }}</p>
         <ul class="flex flex-row gap-32 text-5xl font-bold">
