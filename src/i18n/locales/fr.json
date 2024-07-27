@@ -3,10 +3,30 @@
         "fr": "Français",
         "en": "Anglais"
     },
+    "time": {
+        "year": "an",
+        "years": "ans",
+        "month": "mois",
+        "months": "mois",
+        "day": "jour",
+        "days": "jours",
+        "hour": "heure",
+        "hours": "heures" 
+    },
     "nav": {
         "about": "À propos",
         "projects": "Projets",
         "contact": "Contact",
         "dark_mode": "Mode sombre"
+    },
+    "hero": {
+        "name": "Salut, <br> Je suis Jules",
+        "presentation": "Je suis un développeur full-stack <br> basé à Paris, France.",
+        "download_cv": "Télécharger mon CV"
+    },
+    "about": {
+        "description": "Passionné par l'informatique depuis mon enfance, j'ai découvert le développement web il y a environ 1 an et cela m'a immédiatement plu. J'ai commencé par un apprentissage d'un an dans une entreprise, mais mon désir de créer des sites web de A à Z m'a poussé à me lancer en freelance. En septembre, je commencerai un nouveau cursus à l'école 42 pour développer mes compétences en informatique.",
+        "technologies": "Voici les <br> technologies que j'utilise",
+        "experience": "{time} d'expérience"
     }
 }

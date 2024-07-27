@@ -5,24 +5,24 @@
 
 <template >
     <div class="w-full flex items-center flex-col gap-16 dark:text-white">
-        <Separator id="about" title="About me" />
-        <p class="w-2/6 leading-10">Passionate about IT since I was child, I discover web developping about 1 year ago and I immediately enjoy it and study it. I started with an apprentenship of 1 year in a company but my desire to create website from scratch make me want to launch myself into freelance. In September I will begin a new cursus at 42' school to develop my skills in computer science.</p>
+        <Separator id="about" title="about" />
+        <p class="w-2/6 leading-10">{{ $t('about.description') }}</p>
         <ul class="flex flex-row gap-32 text-5xl font-bold">
             <li class="li-about">
                 <h4>Front-end</h4>
-                <p class="p-about">1 Year Experience</p>
+                <p class="p-about">{{ $t('about.experience', { time: `1 ${$t('time.year')}` }) }}</p>
             </li>
             <li class="li-about">
                 <h4>Python</h4>
-                <p class="p-about">6 Months Experience</p>
+                <p class="p-about">{{ $t('about.experience', { time:`6 ${$t('time.months')}` }) }}</p>
             </li>
             <li class="li-about">
                 <h4>Back-end</h4>
-                <p class="p-about">60+ Hours Experience</p>
+                <p class="p-about">{{ $t('about.experience', { time: `60+ ${$t('time.hours')}` }) }}</p>
             </li>
         </ul>
 
-        <h3 class="text-4xl text-center font-semibold">These are the <br> technologies I've been using</h3>
+        <h3 class="text-4xl text-center font-semibold" v-html="$t('about.technologies')"></h3>
 
         <AboutSlider />
 

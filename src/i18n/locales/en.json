@@ -3,10 +3,29 @@
         "fr": "French",
         "en": "English"
     },
+    "time": {
+        "year": "year",
+        "years": "years",
+        "month": "month",
+        "months": "months",
+        "day": "day",
+        "days": "days",
+        "hour": "hour",
+        "hours": "hours" 
+    },
     "nav": {
         "about": "About",
         "projects": "Projects",
         "contact": "Contact",
         "dark_mode": "Dark Mode"
-    }
+    },
+    "hero": {
+        "name": "Hi, <br> I'm Jules",
+        "presentation": "I'm a full-stack developer <br> based in Paris, France.",
+        "download_cv": "Download CV"
+    },
+    "about": {
+        "description": "Passionate about IT since I was child, I discover web developping about 1 year ago and I immediately enjoy it and study it. I started with an apprentenship of 1 year in a company but my desire to create website from scratch make me want to launch myself into freelance. In September I will begin a new cursus at 42' school to develop my skills in computer science.",
+        "technologies": "These are the <br> technologies I've been using"
+    } 
 }

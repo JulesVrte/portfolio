@@ -5,7 +5,7 @@
 
 <template>
     <div class="w-full flex justify-center">
-        <Separator title="My projects" />
+        <Separator title="projects" />
     </div>
 </template>
 

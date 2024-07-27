@@ -4,7 +4,7 @@
 
 <template>
     <div class="w-full flex justify-center">
-        <Separator title="Contact me" />
+        <Separator title="contact" />
     </div>
 </template>
 

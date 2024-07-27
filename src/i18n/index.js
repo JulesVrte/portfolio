@@ -7,6 +7,5 @@ export default createI18n({
     fallbackLocale: "en",
     legacy: false,
     messages: { en, fr, },
-
     globalInjection: true,
 });

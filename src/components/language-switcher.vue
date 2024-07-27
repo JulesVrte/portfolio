@@ -6,8 +6,6 @@
 
     const supportedLocales = Trans.supportedLocales
 
-    console.log(supportedLocales)
-
     const switchLanguages = async (event) => {
         const newLocale = event.target.value;
 
