@@ -1,312 +1,33 @@
 <script setup>
-    import { ref, onMounted } from 'vue';
     import Separator from './separator.vue';
-
-    const carousel = ref(null);
-    const listProject = ref(null);
-    const itemProject = ref([]);
-
-    const projects = [
-        {
-            title: 'Projet 1',
-            topic: 'topic 1',
-            description: 'Description du projet 1',
-            techs: 'tech 1 details',
-            img: 'src/assets/images/projects/1.png',
-            preview: 'src/assets/images/projects/1_preview.png'
-        },
-        {
-            title: 'Projet 2',
-            topic: 'topic 2',
-            description: 'Description du projet 2',
-            techs: 'tech 2 details',
-            img: 'src/assets/images/projects/2.png',
-            preview: 'src/assets/images/projects/2_preview.png'
-        },
-        {
-            title: 'Projet 3',
-            topic: 'topic 3',
-            description: 'Description du projet 3',
-            techs: 'tech 3 details',
-            img: 'src/assets/images/projects/3.png',
-            preview: 'src/assets/images/projects/3_preview.png'
-        },
-        {
-            title: 'Projet 4',
-            topic: 'topic 4',
-            description: 'Description du projet 4',
-            techs: 'tech 4 details',
-            img: 'src/assets/images/projects/4.png',
-            preview: 'src/assets/images/projects/4_preview.png'
-        },
-        {
-            title: 'Projet 5',
-            topic: 'topic 5',
-            description: 'Description du projet 5',
-            techs: 'tech 5 details',
-            img: 'src/assets/images/projects/5.png',
-            preview: 'src/assets/images/projects/5_preview.png'
-        }
-    ]
-
-    const showSlider = (type) => {
-        if (type === 'next') {
-            itemProject.value.push(itemProject.value.shift());
-      }
-    }
+    import ProjectsSlider from './projects-slider.vue';
+    import projects from '~/assets/projects.json';
 </script>
 
 <template>
-    <div class="section">
+    <div class="section projects">
         <Separator title="projects" />
-        <div class="carousel" ref="carousel">
-            <div class="list-project" ref="listProject">
-                <div class="item-project" v-for="project in projects" :key="project.title" ref="itemProject">
-                    <img :src="project.img" alt="img 1" />
-                    <div class="intro">
-                        <div class="title">
-                            {{ project.title }}
-                        </div>
-                        <div class="topic">
-                            {{ project.topic }}
-                        </div>
-                        <div class="description">
-                            {{ project.description }}
-                        </div>
-                        <button class="see-more">See more &#8599</button>
-                    </div>
-                    <div class="details">
-                        <div class="title">
-                            {{ project.title }}
-                        </div>
-                        <div class="description">
-                            {{ project.description }}
-                        </div>
-                        <div class="techs">
-                            {{ project.techs }}
-                        </div>
-                        <div class="preview">
-                            <img :src="project.preview" :alt="`preview-${project.title}`" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="arrows">
-                <button id="prev" @click="showSlider('prev')"><</button>
-                <button id="back">Go back &#8599</button>
-                <button id="next" @click="showSlider('next')">></button>
-            </div>
-        </div>
+        <ProjectsSlider :projects="projects" />
     </div>
 </template>
 
 <style>
-    :root {
-        --item1-transform: translate(-100%, -5%) scale(1.5);
-        --item1-filter: blur(30px);
-        --item1-z-index: 11;
-        --item1-opacity: 0;
-
-        --item2-transform: translate(0, 0);
-        --item2-filter: blur(0);
-        --item2-z-index: 10;
-        --item2-opacity: 1;
-
-        --item3-transform: translate(50%, 10%) scale(0.8);
-        --item3-filter: blur(10px);
-        --item3-z-index: 9;
-        --item3-opacity: 1;
-
-        --item4-transform: translate(90%, 20%) scale(0.5);
-        --item4-filter: blur(20px);
-        --item4-z-index: 8;
-        --item4-opacity: 1;
-
-        --item5-transform: translate(120%, 30%) scale(0.3);
-        --item5-filter: blur(40px);
-        --item5-z-index: 7;
-        --item5-opacity: 0;
-    }
-    .carousel {
-        margin-top: -50px;
-        height: 800px;
+    .projects {
         position: relative;
         overflow: hidden;
-        width: 100%;
     }
 
-    .carousel .list-project {
+    .projects::before {
+        width: 800px;
+        height: 400px;
+        content: '';
+        background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(166,187,204,1) 100%);
         position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 1140px;
-        max-width: 90%;
-        height: 80%;
-    }
-
-    .carousel .list-project .item-project {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 70%;
-        height: 100%;
-    }
-
-    .carousel .list-project .item-project img {
-        width: 70%;
-        position: absolute;
-        right: -50px;
+        border-radius: 20% 30% 80% 10% ;
+        filter: blur(150px);
         top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .carousel .list-project .item-project .details {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .carousel .list-project .item-project .intro {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 400px;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .carousel .list-project .item-project:nth-child(2) .intro {
-        opacity: 1;
-        pointer-events: auto;
-        transition: opacity 0.5s;
-    }
-
-    .carousel .list-project .item-project:nth-child(2){
-        transform: var(--item2-transform);
-        filter: var(--item2-filter);
-        z-index: var(--item2-z-index);
-        opacity: var(--item2-opacity);
-    }
-
-    .carousel .list-project .item-project:nth-child(1){
-        transform: var(--item1-transform);
-        filter: var(--item1-filter);
-        z-index: var(--item1-z-index);
-        opacity: var(--item1-opacity);
-        pointer-events: none;
-    }
-
-    .carousel .list-project .item-project:nth-child(3){
-        transform: var(--item3-transform);
-        filter: var(--item3-filter);
-        z-index: var(--item3-z-index);
-        opacity: var(--item3-opacity);
-    }
-
-    .carousel .list-project .item-project:nth-child(4){
-        transform: var(--item4-transform);
-        filter: var(--item4-filter);
-        z-index: var(--item4-z-index);
-        opacity: var(--item4-opacity);
-    }
-
-    .carousel .list-project .item-project:nth-child(5){
-        transform: var(--item5-transform);
-        filter: var(--item5-filter);
-        z-index: var(--item5-z-index);
-        opacity: var(--item5-opacity);
-        pointer-events: none;
-    }
-
-    .arrows {
-        position: absolute;
-        bottom: 10px;
-        width: 1140px;
-        max-width: 90%;
         left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        transform: translate(-10%, -50%);
+        transition: 1s;
     }
-
-    .arrows #prev,
-    .arrows #next {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        font-family: monospace;
-        font-size: large;
-        font-weight: bold;
-        border: 1px solid #555;
-    }
-
-    .arrows #back {
-        font-family: Popins;
-        font-weight: 500;
-        border: none;
-        letter-spacing: 3px;
-        border-bottom: 1px solid #555;
-        background-color: transparent;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .carousel .list-project .item-project .title {
-        font-size: 2em;
-        line-height: 0.8em;
-
-    }
-
-    .carousel .list-project .item-project .topic {
-        font-size: 4em;
-        font-weight: 500;
-    }
-
-    .carousel .list-project .item-project .description {
-        font-size: small
-    }
-
-    .carousel .list-project .item-project .see-more {
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid #555;
-        font-family: 'Poppins';
-        font-weight: bold;
-        margin-top: 1.2em;
-        padding: 5px 0px;
-    }
-
-    @keyframes showContent {
-        from {
-            transform: translateY(50%);
-            filter: blur(30px);
-        } to {
-            filter: blur(0);
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    .carousel .list-project .item-project:nth-child(2) .intro .title,
-    .carousel .list-project .item-project:nth-child(2) .intro .topic,
-    .carousel .list-project .item-project:nth-child(2) .intro .description,
-    .carousel .list-project .item-project:nth-child(2) .intro .see-more {
-        opacity: 0;
-        animation: showContent 0.5s 0.7s ease-in-out 1 forwards;
-    }
-
-
-    .carousel .list-project .item-project:nth-child(2) .intro .topic {
-        animation-delay: 0.9s;
-    }
-
-    .carousel .list-project .item-project:nth-child(2) .intro .description {
-        animation-delay: 1.1s;
-    }
-
-    .carousel .list-project .item-project:nth-child(2) .intro .see-more {
-        animation-delay: 1.3s;
-    }
-
 </style>

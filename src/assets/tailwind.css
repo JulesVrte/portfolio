@@ -18,6 +18,6 @@
     }
 
     .section {
-        @apply w-full flex items-center flex-col gap-16 
+        @apply w-full flex items-center flex-col gap-16 dark:text-white
     }
 }

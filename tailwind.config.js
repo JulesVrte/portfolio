@@ -37,8 +37,8 @@ export default {
       padding: "2rem",
     },
     screens: {
-      sm: "640px",
-      md: "768px",
+      sm: "767px",
+      md: "991px",
     },
   },
   plugins: [

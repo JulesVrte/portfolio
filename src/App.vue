@@ -10,9 +10,9 @@ import ProjectsSection from '~/components/projects-section.vue';
   <div class="flex items-center flex-col min-h-screen font-Poppins bg-white dark:bg-[#121212]">
     <Navbar />
     <HeroSection />
-    <AboutSection />
-    <ProjectsSection />
-    <ContactSection />
+    <AboutSection id="about"/>
+    <ProjectsSection id="projects"/>
+    <ContactSection id="contact"/>
   </div>
 </template>
 

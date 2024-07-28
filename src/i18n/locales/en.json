@@ -27,5 +27,15 @@
     "about": {
         "description": "Passionate about IT since I was child, I discover web developping about 1 year ago and I immediately enjoy it and study it. I started with an apprentenship of 1 year in a company but my desire to create website from scratch make me want to launch myself into freelance. In September I will begin a new cursus at 42' school to develop my skills in computer science.",
         "technologies": "These are the <br> technologies I've been using"
-    } 
+    },
+    "projects": {
+        "title": "My projects",
+        "see_more": "See more",
+        "go_back": "Go back",
+        "description1": "The company wanted to develop a website that would allow users to find accommodations and activities in the city of their choice.",
+        "description2": "Sophie Buel, a space designer, wanted a dynamic showcase website to show her works and creations.",
+        "description3": "For this project, it was about optimizing, debugging and modernizing the website of Nina Carducci, a professional photographer.",
+        "description4": "Kasa, a company that rents apartments between individuals, wanted to completely redesign their website with up-to-date technologies.",
+        "description5": "Mon Vieux Grimoire a small chain of bookstores that wanted to open a book referencing and rating site, For this site I only took care of the back-end part."
+    }
 }

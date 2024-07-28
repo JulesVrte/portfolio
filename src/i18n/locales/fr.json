@@ -28,5 +28,15 @@
         "description": "Passionné par l'informatique depuis mon enfance, j'ai découvert le développement web il y a environ 1 an et cela m'a immédiatement plu. J'ai commencé par un apprentissage d'un an dans une entreprise, mais mon désir de créer des sites web de A à Z m'a poussé à me lancer en freelance. En septembre, je commencerai un nouveau cursus à l'école 42 pour développer mes compétences en informatique.",
         "technologies": "Voici les <br> technologies que j'utilise",
         "experience": "{time} d'expérience"
+    },
+    "projects": {
+        "title": "Mes projets",
+        "see_more": "Voir plus",
+        "go_back": "Retour",
+        "description1": "L’entreprise souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "description2": "Sophie Buel, une décoratrice d'intérieur, souhaitait un site vitrine dynamique pour exposer ses œuvres et ses créations.",
+        "description3": "Pour ce projet-ci, il s'agissait d'optimiser de debugger et de moderniser le site web de Nina Carducci, une photographe professionnelle.",
+        "description4": "Kasa, une entreprise de location d’appartements entre particuliers souhaitait faire une refonte totale de leur site web avec des technologies au goût du jour.",
+        "description5": "Mon Vieux Grimoire une petite chaîne de librairies qui souhaitait ouvrir un site de référencement et de notation de livres, Pour ce site la je ne me suis occupé que de la partie back-end."
     }
 }

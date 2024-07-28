@@ -29,21 +29,6 @@
     </div>
 </template>
 
-<!-- <i18n>
-    {
-        "en": {
-            "about-me": "About me"
-        },
-        "fr": {
-            "about": "A propos de moi",
-            "front-end": "Front-end",
-            "python": "Python",
-            "back-end": "Back-end",
-            "experience": "Experience",
-            "technologies": "Voici les technologies que j'ai utilisées"
-        }
-    }
-</i18n> -->
 
 <style >
     
