@@ -24,7 +24,7 @@ export default {
         }
       },
       animation : {
-        autoRun: "autoRun 10s linear infinite"
+        autoRun: "autoRun 15s linear infinite"
       },
     },
     fontFamily: {

@@ -29,11 +29,11 @@ import ExpressIcon from './icons/express-icon.vue';
                 <VueIcon />
                 <h5>Vue</h5>
             </div>
-            <div class="item" style="--position: 5; --color: #aeffde">
+            <div class="item" style="--position: 5; --color: #5bfac3">
                 <NuxtIcon />
                 <h5>Nuxt</h5>
             </div>
-            <div class="item" style="--position: 6;--color: #C0E5D7">
+            <div class="item" style="--position: 6;--color: #89ccb7">
                 <FigmaIcon />
                 <h5>Figma</h5>
             </div>
