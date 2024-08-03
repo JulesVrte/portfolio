@@ -119,7 +119,7 @@
     }
     .carousel {
         margin-top: -50px;
-        height: 800px;
+        height: 600px;
         position: relative;
         overflow: hidden;
         width: 100%;
@@ -146,9 +146,9 @@
     .carousel .list-project .item-project .container-img {
         height: 400px;
         overflow: hidden;
+        right: -50px;
         width: 70%;
         position: absolute;
-        right: -50px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -475,8 +475,9 @@
 
     @media screen and (max-width: 1441px) {
         .carousel .list-project .item-project{
-            left: 18%;
+            left: 10%
         }
+        
     }
 
     @media screen and (max-width: 991px) {

@@ -14,7 +14,7 @@
     }
     
     .item {
-        @apply w-[300px] h-[125px] absolute left-[100%] animate-autoRun animation-delay-[calc((15s/7)*(var(--position)-1))] bg-[var(--color)] rounded-[60px] flex items-center justify-center flex-row gap-3 text-2xl font-bold font-K2D group-hover:[animation-play-state:paused] shadow-navbar dark:shadow-navbar-black
+        @apply w-[300px] h-[125px] absolute left-[100%] animate-autoRun animation-delay-[calc((15s/7)*(var(--position)-1))] bg-[var(--color)] rounded-[60px] flex items-center justify-center flex-row gap-3 text-2xl font-bold font-K2D group-hover:[animation-play-state:paused] shadow-slider dark:shadow-slider-black
     }
 
     .section {
