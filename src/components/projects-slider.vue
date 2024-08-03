@@ -473,6 +473,12 @@
         pointer-events: auto;
     }
 
+    @media screen and (max-width: 1441px) {
+        .carousel .list-project .item-project{
+            left: 18%;
+        }
+    }
+
     @media screen and (max-width: 991px) {
         .carousel .list-project .item-project {
             width: 90%;

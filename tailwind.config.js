@@ -10,7 +10,9 @@ export default {
     },
     boxShadow: {
       'navbar': '0px 0px 100px 0px #FFFBFB inset, rgba(0, 0, 0, 0.24) 0px 3px 8px;',
-      'navbar-black': '0px 0px 50px 0px #888888 inset, 0px 3px 8px 0px #b0b0b0 ',
+      'navbar-black': '0px 0px 50px 0px #888888 inset, 0px 3px 8px #888888',
+      'navbar': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      'navbar-black': '0px 3px 8px #888888',
     },
     extend: {
       colors: {
