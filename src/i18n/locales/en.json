@@ -17,7 +17,8 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact",
-        "dark_mode": "Dark Mode"
+        "dark": "Dark",
+        "light": "Light"
     },
     "hero": {
         "name": "Hi, <br> I'm Jules",
@@ -26,7 +27,8 @@
     },
     "about": {
         "description": "Passionate about IT since I was child, I discover web developping about 1 year ago and I immediately enjoy it and study it. I started with an apprentenship of 1 year in a company but my desire to create website from scratch make me want to launch myself into freelance. In September I will begin a new cursus at 42' school to develop my skills in computer science.",
-        "technologies": "These are the <br> technologies I've been using"
+        "technologies": "These are the <br> technologies I've been using",
+        "experience": "{time} of experience"
     },
     "projects": {
         "title": "My projects",
@@ -37,5 +39,16 @@
         "description3": "For this project, it was about optimizing, debugging and modernizing the website of Nina Carducci, a professional photographer.",
         "description4": "Kasa, a company that rents apartments between individuals, wanted to completely redesign their website with up-to-date technologies.",
         "description5": "Mon Vieux Grimoire a small chain of bookstores that wanted to open a book referencing and rating site, For this site I only took care of the back-end part."
-    }
+    },
+    "form": {
+        "name": "Name",
+        "email": "Email address",
+        "message": "Message",
+        "submit": "Get in touch"
+    },
+    "placeholder": {
+        "name": "Your name",
+        "email": "exemple@email.com"
+    },
+    "copyright": "2024 Jules Vérité. All rights reserved."
 }

@@ -14,7 +14,7 @@
 <style>
     .projects {
         position: relative;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .projects::before {

@@ -22,10 +22,10 @@
     }
 
     .input {
-        @apply rounded-[10px] border-[#A6BBCC] border-solid border-[1px] h-[50px] px-4;
+        @apply rounded-[10px] border-[#A6BBCC] border-solid border-[1px] h-[50px] px-4 dark:bg-black;
     }
 
     .label {
-        @apply text-[#000] text-[18px] font-bold mb-3 w-full
+        @apply text-[#000] text-[18px] font-bold mb-3 w-full dark:text-white
     }
 }

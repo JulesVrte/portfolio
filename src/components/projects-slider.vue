@@ -127,6 +127,7 @@
 
     .carousel .list-project {
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -477,10 +478,9 @@
         .carousel .list-project .item-project{
             left: 10%
         }
-        
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1290px) {
         .carousel .list-project .item-project {
             width: 90%;
         }
@@ -490,12 +490,20 @@
         }
 
         .carousel .list-project .item-project .container-img {
-            right: 0;
+            right: 10%;
             width: 40%;
+        }
+
+        .carousel.show-details .list-project .item-project:nth-child(2) .details {
+            right: 10%;
         }
 
         .carousel .list-project .item-project .details .techs {
             overflow: auto;
+        }
+
+        .carousel.show-details .list-project .item-project:nth-child(2) .container-img {
+            right: 70%;
         }
     }
 
@@ -509,7 +517,7 @@
         }
 
         .carousel .list-project {
-            height: 100%;
+            left: 40%
         }
 
         .carousel .list-project .item-project .intro {
@@ -520,9 +528,18 @@
         .carousel .list-project .item-project .container-img {
             right: 0;
             width: 40%;
+            height: 200px;
         }
 
-        .carousel.show-details .list-project .item-project:nth-child(2) .details .title {
+        .carousel .list-project .item-project:nth-child(2) .topic {
+            font-size: 3em;
+        }
+
+        .carousel.show-details .list-project .item-project:nth-child(2) .container-img {
+            right: 50%;
+        }
+
+        .carousel.show-details .list-project .item-project:nth-child(2) .details .topic {
             font-size: 2em;
         }
 

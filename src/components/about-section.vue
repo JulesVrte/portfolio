@@ -6,8 +6,8 @@
 <template >
     <div class="section">
         <Separator id="about" title="about" />
-        <p class="w-3/6 leading-10">{{ $t('about.description') }}</p>
-        <ul class="flex flex-row gap-32 text-5xl font-bold">
+        <p class="md:w-3/6 w-5/6 leading-10">{{ $t('about.description') }}</p>
+        <ul class="flex flex-col md:flex-row gap-32 text-5xl font-bold">
             <li class="li-about">
                 <h4>Front-end</h4>
                 <p class="p-about">{{ $t('about.experience', { time: `1 ${$t('time.year')}` }) }}</p>
