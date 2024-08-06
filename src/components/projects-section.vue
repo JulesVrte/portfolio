@@ -7,11 +7,11 @@
 <template>
     <div class="section projects">
         <Separator title="projects" />
-        <ProjectsSlider :projects="projects" />
+        <ProjectsSlider class="autoBlur" :projects="projects" />
     </div>
 </template>
 
-<style>
+<style scoped>
     .projects {
         position: relative;
         overflow: visible;
@@ -29,5 +29,8 @@
         left: 50%;
         transform: translate(-10%, -50%);
         transition: 1s;
+        z-index: 0;
     }
+
+    
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <form class="flex flex-col xl:w-1/3 w-2/3 pb-[24px] gap-4 mb-[64px]" action="https://api.web3forms.com/submit" method="POST">
+    <form class="translateRightToLeft flex flex-col xl:w-1/3 w-2/3 pb-[24px] gap-4 mb-[64px]" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="7ef51caf-1c6a-4e79-ba25-c72b0a03041d">
       <div class="flex flex-col">
         <label class="label" for="name">{{ $t('form.name')}}</label>
@@ -16,3 +16,20 @@
       <button class="rounded-[10px] border-[#A6BBCC] border-solid border-[1px] h-[50px] px-4 bg-black text-white dark:bg-white dark:text-black" type="submit">{{ $t('form.submit') }}</button>
     </form>
 </template>
+
+<style scoped>
+  .translateRightToLeft {
+    animation: translateRightToLeft both;
+    animation-timeline: view(100% 5%);
+    overflow: hidden;
+  }
+
+  @keyframes translateRightToLeft {
+    from {
+      transform: translateY(100%) scale(0.3);
+    }
+    to {
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>

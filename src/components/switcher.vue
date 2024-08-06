@@ -18,7 +18,7 @@
     const isDark = useDark()
 </script>
 
-<style>
+<style scoped>
   .switcher {
     transition: transform 0.5s ease-in-out;
   }

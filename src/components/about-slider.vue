@@ -48,6 +48,3 @@ import ExpressIcon from './icons/express-icon.vue';
         </div>
     </div>
 </template>
-
-<style >
-</style>

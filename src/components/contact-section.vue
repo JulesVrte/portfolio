@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .contact {
         border: none;
         position: relative;

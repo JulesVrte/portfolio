@@ -50,8 +50,8 @@
     }
 </script>
 
-<template lang="">
-    <div class="carousel" ref="carousel">
+<template>
+    <div class="carousel autoBlur" ref="carousel">
         <div class="list-project" ref="listProject">
             <div class="item-project" v-for="project in projects" :key="project.title" ref="itemProject">
                 <div class=container-img>
@@ -67,7 +67,7 @@
                     <div class="description">
                         {{ $t(project.description )}}
                     </div>
-                    <button class="see-more" @click="ShowDetails">{{ $t('projects.see_more') }} &#8599</button>
+                    <button class="see-more" @click="ShowDetails">{{ $t('projects.see_more') }} &#8599;</button>
                 </div>
                 <div class="details">
                     <div class="topic">
@@ -83,8 +83,8 @@
             </div>
         </div>
         <div class="arrows">
-            <button id="prev" @click="showSlider('prev')" ref="nextButton"><</button>
-            <button id="back" @click="BackToSlider" >{{ $t('projects.go_back') }} &#8599</button>
+            <button id="prev" @click="showSlider('prev')" ref="nextButton">{{"<"}}</button>
+            <button id="back" @click="BackToSlider" >{{ $t('projects.go_back') }} &#8599;</button>
             <button id="next" @click="showSlider('next')" ref="prevButton">></button>
         </div>
     </div>
@@ -118,6 +118,7 @@
         --item5-opacity: 0;
     }
     .carousel {
+        z-index: 1;
         margin-top: -50px;
         height: 600px;
         position: relative;
@@ -222,6 +223,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
     }
 
     .arrows #prev,
@@ -549,4 +551,17 @@
         }
     }
 
+    .autoBlur {
+        animation: autoBlurAnimation both;
+        animation-timeline: view(100% 5%);
+    }
+
+    @keyframes autoBlurAnimation {
+        from {
+            filter: blur(40px);
+        }
+        to {
+            filter: blur(0);
+        }
+    }
 </style>

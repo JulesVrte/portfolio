@@ -25,6 +25,6 @@
     </select>
 </template>
 
-<style>
+<style scoped>
     
 </style>
