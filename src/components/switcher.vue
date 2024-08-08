@@ -1,5 +1,5 @@
-<template lang="">
-    <div class="bars fixed z-11 top-20 right-0 bg-black py-2 pl-2 rounded-l-[10px] text-white dark:bg-white dark:text-black">
+<template>
+    <div class="bars fixed z-20 top-20 right-0 bg-black py-2 pl-2 rounded-l-[10px] text-white dark:bg-white dark:text-black">
       <BarsIcon />
       <div class="switcher fixed top-12 right-0 translate-x-full py-2 px-2 rounded-l-[10px] bg-black dark:bg-white">
           <div class="checkbox-wrapper-2 flex content-center gap-3 pl-1 items-center">

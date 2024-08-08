@@ -1,5 +1,5 @@
 <template>
-    <form class="translateRightToLeft flex flex-col xl:w-1/3 w-2/3 pb-[24px] gap-4 mb-[64px]" action="https://api.web3forms.com/submit" method="POST">
+    <form class="translateRightToLeft flex flex-col xl:w-1/3 w-2/3 pb-[24px] gap-4 mb-[64px] overflow-hidden" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="7ef51caf-1c6a-4e79-ba25-c72b0a03041d">
       <div class="flex flex-col">
         <label class="label" for="name">{{ $t('form.name')}}</label>
@@ -21,7 +21,6 @@
   .translateRightToLeft {
     animation: translateRightToLeft both;
     animation-timeline: view(100% 5%);
-    overflow: hidden;
   }
 
   @keyframes translateRightToLeft {
