@@ -1,7 +1,7 @@
 <script setup>
     import Separator from './separator.vue';
     import ProjectsSlider from './projects-slider.vue';
-    import projects from '~/assets/projects.json';
+    import projects from '~/assets/projects.js';
 </script>
 
 <template>
