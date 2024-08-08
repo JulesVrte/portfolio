@@ -476,7 +476,7 @@
         pointer-events: auto;
     }
 
-    @media screen and (max-width: 1441px) {
+    @media screen and (max-width: 1500px) {
         .carousel .list-project .item-project{
             left: 10%
         }

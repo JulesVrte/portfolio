@@ -33,4 +33,25 @@
         transform: translate(-10%, -50%);
         transition: 1s;
     }
+
+    @media screen and (max-width: 767px) {
+        .contact {
+            overflow: hidden;
+        }
+
+        .contact::before {
+            width: 200px;
+            height: 200px;
+            content: '';
+            background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(166,187,204,1) 100%);
+            position: absolute;
+            border-radius: 20% 30% 80% 10% ;
+            filter: blur(150px);
+            top: 50%;
+            left: 5%;
+            transform: translate(-10%, -50%);
+            transition: 1s;
+            z-index: 0;
+        }
+    }
 </style>

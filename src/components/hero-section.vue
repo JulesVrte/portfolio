@@ -8,7 +8,7 @@
             <a class="md:w-2/3 mt-6 md:ml-6 mx-6 text-center bg-black text-white font-medium rounded-button py-[12px] px-[40px] dark:bg-white dark:text-black" href="#" >{{ $t('hero.download_cv') }}</a>
         </div>
 
-        <img class="translateRightToLeft w-[500px] h-[500px]" :src="heroImg" alt="heroImage"/>
+        <img class="translateRight w-[500px] h-[500px]" :src="heroImg" alt="heroImage"/>
     </div>
 </template>
 
@@ -34,28 +34,18 @@
         }
     }
 
-    .translateRightToLeft {
-        animation: translateRightToLeft 1.5s ease-in-out;
+    .translateRight {
+        animation: translateRightAnimation 1s ease-in-out;
     }
     
-    @keyframes translateRightToLeft {
-        0% {
-            transform: translateX(200%);
+    @keyframes translateRightAnimation {
+        from {
+            transform: translateX(50%) scale(0.1);
+            opacity: 0;
         }
-        20% {
-            transform: translateX(-40%)
-        }
-        40% {
-            transform: translateX(35%);
-        }
-        60% {
-            transform: translateX(-20%);
-        }
-        80% {
-            transform: translateX(10%);
-        }
-        100% {
-            transform: translateX(0);
+        to {
+            opacity: 1;
+            transform: scale(1)
         }
     }
     
