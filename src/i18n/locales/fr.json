@@ -48,7 +48,7 @@
     },
     "placeholder": {
         "name": "Votre nom",
-        "email": "exemple@email.com"
+        "email": "{'exemple@email.com'}"
     },
     "copyright": "2024 Jules Vérité. Tous droits réservés."
 }
