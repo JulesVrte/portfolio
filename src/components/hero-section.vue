@@ -1,5 +1,5 @@
 <template>
-    <div class="m-12 flex flex-col-reverse md:flex-row md:w-full md:items-center md:justify-center gap-10">
+    <div class="m-12 flex flex-col-reverse md:flex-row md:w-full md:items-center md:justify-evenly gap-10">
         <div class="showScale flex flex-col">
             <h2 class="font-medium md:text-7xl text-6xl font-Poppins dark:text-white leading-tight ml-6" v-html="$t('hero.name')"></h2>
             
@@ -8,7 +8,7 @@
             <a class="md:w-2/3 mt-6 md:ml-6 mx-6 text-center bg-black text-white font-medium rounded-button py-[12px] px-[40px] dark:bg-white dark:text-black" href="#" >{{ $t('hero.download_cv') }}</a>
         </div>
 
-        <img class="translateRight w-[500px] h-[500px]" :src="heroImg" alt="heroImage"/>
+        <img class="translateRight w-[500px] h-[500px] object-cover" :src="heroImg" alt="heroImage"/>
     </div>
 </template>
 
