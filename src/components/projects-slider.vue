@@ -124,6 +124,7 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+        padding: 500px 0px;
     }
 
     .carousel .list-project {
