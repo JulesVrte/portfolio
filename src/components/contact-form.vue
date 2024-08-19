@@ -48,7 +48,7 @@
         <label class="label" for="message">{{ $t('form.message') }}</label>
         <textarea class="input h-[200px]" name="message" v-model="message" ref="inputMessage" required></textarea>
       </div>
-      <button class="rounded-[10px] border-[#A6BBCC] border-solid border-[1px] h-[50px] px-4 bg-black text-white dark:bg-white dark:text-black" type="submit">{{ $t('form.submit') }}</button>
+      <button class="rounded-[10px] border-[#A6BBCC] border-solid border-[1px] h-[50px] px-4 bg-black text-white dark:bg-white dark:text-black active:shadow-button dark:active:shadow-button-black" type="submit">{{ $t('form.submit') }}</button>
     </form>
 </template>
 

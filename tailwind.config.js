@@ -12,7 +12,9 @@ export default {
       'navbar': '0px 0px 100px 0px #FFFBFB inset, rgba(0, 0, 0, 0.24) 0px 3px 8px',
       'navbar-black': '0px 0px 50px 0px #888888 inset, 0px 3px 8px #888888',
       'slider': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-      'slider-black': '0px 3px 8px #888888'
+      'slider-black': '0px 3px 8px #888888',
+      'button': '0px 0px 100px 0px #FFFBFB inset',
+      'button-black': '0px 0px 50px 0px #888888 inset',
     },
     extend: {
       colors: {
